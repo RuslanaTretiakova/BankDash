@@ -1,0 +1,8 @@
+.layout {
+  color: black;
+
+  &__container {
+    padding-top: var(--header-height);
+    padding-left: var(--aside-width);
+  }
+}
