@@ -1,4 +1,8 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/placeholders';
+
 .aside {
+  position: relative;
   width: var(--aside-width);
   z-index: 20;
   background: #fff;
@@ -6,4 +10,47 @@
   top: 0;
   left: 0;
   bottom: 0;
+  border-right: var(--block-border);
+
+  .logo {
+    box-sizing: border-box;
+    @include font(900, 25px, 32px);
+    @extend %flex-center;
+    height: var(--header-height);
+    color: var(--help-color-2);
+    text-decoration: none;
+    flex-direction: row-reverse;
+  }
+  .navigation {
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      @include font(500, 25px, 31.95px);
+    }
+    &__link {
+        @extend %flex-center;
+        gap: 10px;
+        height: 60px;
+        text-decoration: none;
+        color: #B1B1B1;
+  
+        &:hover {
+          color: var(--primary-color);
+        }
+        &::after {
+          left: 0;
+          position: absolute;
+          content: "";
+          width: 6px;
+          height: 60px;
+          border-radius: 0px 10px 10px 0px;
+        }
+        &:hover::after {
+          background-color: var(--primary-color);
+        }
+      }
+  }
 }
+

@@ -2,8 +2,10 @@
 @import 'remixicon/fonts/remixicon.css';
 @import './variables';
 @import './helpers';
+@import './mixins';
+@import './placeholders';
 
 body {
-  font-family: 'Lato', sans-serif;
+  @extend %font-primary;
   background: #e5e5e5;
 }
