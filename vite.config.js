@@ -7,4 +7,18 @@ export default defineConfig({
       lintOnStart: true,
     }),
   ],
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "@/assets/styles/_fonts-placeholders.scss";
+        `,
+      },
+    },
+  },
 });

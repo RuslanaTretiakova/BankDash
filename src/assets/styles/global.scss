@@ -2,10 +2,18 @@
 @import 'remixicon/fonts/remixicon.css';
 @import './variables';
 @import './helpers';
-@import './mixins';
-@import './placeholders';
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 body {
   @extend %font-primary;
-  background: #e5e5e5;
+  background: #f5f7fa;
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
 }
