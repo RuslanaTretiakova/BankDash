@@ -1,8 +1,60 @@
 .layout {
   color: black;
-  
+
   &__container {
     padding-top: var(--header-height);
     padding-left: var(--aside-width);
+  }
+
+  .card-container {
+    padding: 1rem 1.5rem;
+    height: 100vh;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'a a b'
+      'c d d'
+      'e f f';
+
+    #item-a {
+      grid-area: a;
+    }
+    #item-b {
+      grid-area: b;
+    }
+    #item-c {
+      grid-area: c;
+    }
+    #item-d {
+      grid-area: d;
+    }
+    #item-e {
+      grid-area: e;
+    }
+    #item-f {
+      grid-area: f;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+
+      &-title {
+        margin: 0;
+        padding-bottom: 1rem;
+        color: var(--help-color-2);
+        font-size: 22px;
+        font-weight: 600;
+        text-align: left;
+      }
+
+      &-content {
+        border-radius: 25px;
+        background-color: var(--white-color);
+        height: auto;
+      }
+    }
   }
 }
