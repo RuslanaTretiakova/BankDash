@@ -32,18 +32,16 @@
     <div id="app">
       <div class="layout">
         <header class="header">
-          <div class="header__items">
-            <h2 class="header__title">Overview</h2>
-          </div>
-          <div class="header__items">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="profile">
-              <div class="profile__picture">
-                <img src="public/icon/790e98129931897251abd3915a931233.jpg" alt="Avatar" />
-              </div>
-            </div>
+          <h2 class="header__title">Overview</h2>
+          <div class="dropdown">
+            <button class="header__profile-button">
+              <img
+                src="/icon/790e98129931897251abd3915a931233.jpg"
+                alt="Avatar"
+                class="header__profile-image"
+              />
+            </button>
+            <div class="dropdown__content dropdown__content--right">content</div>
           </div>
         </header>
         <aside class="aside">
@@ -157,29 +155,29 @@
         </aside>
         <div class="layout__container">
           <div class="card-container">
-            <div class="card" id="item-a">
-              <h2 class="card-title">My Cards</h2>
-              <div class="card-content"></div>
+            <div class="col-span-2">
+              <h2 class="title">My Cards</h2>
+              <div class="card">1</div>
             </div>
-            <div class="card" id="item-b">
-              <h2 class="card-title">Recent Transaction</h2>
-              <div class="card-content"></div>
+            <div>
+              <h2 class="title">Recent Transaction</h2>
+              <div class="card">1</div>
             </div>
-            <div class="card" id="item-c">
-              <h2 class="card-title">Weekly Activity</h2>
-              <div class="card-content"></div>
+            <div class="col-span-2">
+              <h2 class="title">Weekly Activity</h2>
+              <div class="card">1</div>
             </div>
-            <div class="card" id="item-d">
-              <h2 class="card-title">Weekly Activity</h2>
-              <div class="card-content"></div>
+            <div>
+              <h2 class="title">Weekly Activity</h2>
+              <div class="card">1</div>
             </div>
-            <div class="card" id="item-e">
-              <h2 class="card-title">Quick transfer</h2>
-              <div class="card-content"></div>
+            <div>
+              <h2 class="title">Quick transfer</h2>
+              <div class="card">1</div>
             </div>
-            <div class="card" id="item-f">
-              <h2 class="card-title">Balance History</h2>
-              <div class="card-content"></div>
+            <div class="col-span-2">
+              <h2 class="title">Balance History</h2>
+              <div class="card">1</div>
             </div>
           </div>
         </div>

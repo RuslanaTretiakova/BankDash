@@ -7,28 +7,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--white-color);
+  background: #fff;
   height: var(--header-height);
   border-bottom: 1px solid var(--light-color);
-
-  &__items {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &__title {
     color: var(--help-color-2);
     margin: 0;
   }
 
-  .profile {
-    &__picture img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+  &__profile-button {
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    border: 0;
+  }
+
+  &__profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
