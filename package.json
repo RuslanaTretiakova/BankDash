@@ -16,6 +16,7 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
+    "chart.js": "^4.4.1",
     "modern-normalize": "^2.0.0",
     "remixicon": "^4.1.0",
     "vite-plugin-eslint": "^1.8.1"
