@@ -18,25 +18,17 @@ new Chart(document.getElementById('line-chart'), {
     datasets: [
       createDataset({
         data: data.map((row) => row.balance),
-        borderColor: 'rgb(24, 20, 243)',
+        fill: true, // ?
+        borderColor: 'rgba(24, 20, 243, 1)',
         tension: 0.4,
       }),
     ],
   },
   options: {
+    maintainAspectRatio: true,
     responsive: true,
-    scales: {
-      y: {
-        grid: {
-          display: true,
-        },
-      },
-      x: {
-        grid: {
-          drawOnChartArea: true,
-          drawBorder: true,
-        },
-      },
+    layout: {
+      padding: 20,
     },
     elements: {
       point: {

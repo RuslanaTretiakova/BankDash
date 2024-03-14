@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "chart.js": "^4.4.1",
+    "chartjs-plugin-annotation": "^3.0.1",
+    "chartjs-plugin-datalabels": "^2.2.0",
     "modern-normalize": "^2.0.0",
     "remixicon": "^4.1.0",
     "vite-plugin-eslint": "^1.8.1"

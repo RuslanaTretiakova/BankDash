@@ -20,13 +20,13 @@ const datasets = [
   createDataset({
     label: 'Deposit',
     data: data.map((row) => row.deposit),
-    backgroundColor: 'rgb(24, 20, 243)',
+    backgroundColor: 'rgb(24, 20, 243, 1)',
     ...baseDataset,
   }),
   createDataset({
     label: 'Withdraw',
     data: data.map((row) => row.withdraw),
-    backgroundColor: 'rgb(22, 219, 204)',
+    backgroundColor: 'rgb(22, 219, 204, 1)',
     ...baseDataset,
   }),
 ];
@@ -38,8 +38,10 @@ new Chart(document.getElementById('bar-chart'), {
     labels: data.map((row) => row.days),
   },
   options: {
+    maintainAspectRatio: true,
     scales: {
       y: {
+        beginAtZero: true,
         grid: {
           display: true,
         },
@@ -53,20 +55,30 @@ new Chart(document.getElementById('bar-chart'), {
     },
     responsive: true,
     layout: {
-      padding: 30,
+      padding: 20,
     },
     plugins: {
       legend: {
+        labels: {
+          boxWidth: 15,
+          boxHeight: 15,
+          usePointStyle: true,
+          font: {
+            size: 15,
+            color: 'rgba(113, 142, 191, 1)',
+          },
+        },
+        title: {
+          color: 'rgba(113, 142, 191, 1)',
+        },
         position: 'top',
         align: 'end',
-        labels: {
-          pointStyle: 'circle',
-        },
       },
     },
     elements: {
       bar: {
         borderRadius: 100,
+        borderSkipped: false,
       },
     },
   },

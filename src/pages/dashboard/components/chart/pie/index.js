@@ -16,19 +16,20 @@ new Chart(document.getElementById('pie-chart'), {
       createDataset({
         data: data.map((row) => row.count),
         backgroundColor: [
-          'rgb(24, 20, 243)',
-          'rgb(250, 0, 255)',
-          'rgb(252, 121, 0)',
-          'rgb(52, 60, 106)',
+          'rgb(24, 20, 243, 1)',
+          'rgb(250, 0, 255, 1)',
+          'rgb(252, 121, 0, 1)',
+          'rgb(52, 60, 106, 1)',
         ],
         borderWidth: 10,
       }),
     ],
   },
   options: {
+    maintainAspectRatio: true,
     responsive: true,
     layout: {
-      padding: 30,
+      padding: 20,
     },
     plugins: {
       legend: {

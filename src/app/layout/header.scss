@@ -1,6 +1,7 @@
 .header {
   padding: 1rem 1.5rem;
   position: fixed;
+  z-index: 50;
   top: 0;
   right: 0;
   left: var(--aside-width);

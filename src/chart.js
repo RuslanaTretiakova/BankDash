@@ -1,3 +1,4 @@
+// import ChartDataLabels from 'chartjs-plugin-datalabels';
 import {
   Chart,
   PieController,
@@ -9,6 +10,8 @@ import {
   LineController,
   PointElement,
   LineElement,
+  Legend,
+  // annotationPlugin
 } from 'chart.js';
 
 Chart.register(PieController);
@@ -20,3 +23,5 @@ Chart.register(BarElement);
 Chart.register(LineController);
 Chart.register(PointElement);
 Chart.register(LineElement);
+Chart.register(Legend);
+// Chart.register(annotationPlugin);
