@@ -1,16 +1,10 @@
-const mobileMenu = document.querySelector('.mobile-menu');
-const aside = document.querySelector('.aside');
+const mobileMenu = document.querySelector('.j-mobile-menu');
+const asideOverlay = document.querySelector('.j-aside-overlay');
 
 mobileMenu.addEventListener('click', () => {
-  mobileMenu.classList.toggle('mobile-menu--open');
-  aside.classList.toggle('aside--open');
+  document.documentElement.classList.toggle('menu-open');
 });
 
-document.addEventListener('click', (event) => {
-  if (event.target.closest('.mobile-menu') || event.target.closest('.aside')) {
-    return;
-  }
-
-  aside.classList.remove('aside--open');
-  mobileMenu.classList.remove('mobile-menu--open');
+asideOverlay.addEventListener('click', () => {
+  document.documentElement.classList.remove('menu-open');
 });

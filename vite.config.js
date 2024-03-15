@@ -17,6 +17,7 @@ export default defineConfig({
       scss: {
         additionalData: `
           @import "@/assets/styles/_fonts-placeholders.scss";
+          @import "@/assets/styles/_scss-variables.scss";
         `,
       },
     },
