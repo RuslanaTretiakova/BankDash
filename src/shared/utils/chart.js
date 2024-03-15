@@ -11,6 +11,7 @@ export const createDataset = ({
   borderWidth,
   backgroundColor,
   tension,
+  fill,
 }) => {
   if (!Array.isArray(data)) {
     throw new Error('data must be an array');
@@ -27,5 +28,6 @@ export const createDataset = ({
     borderColor,
     borderWidth,
     tension,
+    fill,
   };
 };

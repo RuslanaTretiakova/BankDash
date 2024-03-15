@@ -18,9 +18,9 @@ new Chart(document.getElementById('line-chart'), {
     datasets: [
       createDataset({
         data: data.map((row) => row.balance),
-        fill: true, // ?
         borderColor: 'rgba(24, 20, 243, 1)',
         tension: 0.4,
+        fill: true,
       }),
     ],
   },
@@ -36,6 +36,9 @@ new Chart(document.getElementById('line-chart'), {
       },
     },
     plugins: {
+      datalabels: {
+        display: false,
+      },
       legend: {
         display: false,
       },

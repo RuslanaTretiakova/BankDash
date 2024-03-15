@@ -2,10 +2,10 @@ import { Chart } from 'chart.js';
 import { createDataset } from '@/shared/utils/chart';
 
 const data = [
-  { expense: 'entertainment', count: 30 },
-  { expense: 'investment', count: 20 },
-  { expense: 'bill expense', count: 15 },
-  { expense: 'others', count: 35 },
+  { expense: 'Entertainment', count: 30 },
+  { expense: 'Investment', count: 20 },
+  { expense: 'Bill expense', count: 15 },
+  { expense: 'Others', count: 35 },
 ];
 
 new Chart(document.getElementById('pie-chart'), {
@@ -32,6 +32,21 @@ new Chart(document.getElementById('pie-chart'), {
       padding: 20,
     },
     plugins: {
+      datalabels: {
+        display: true,
+        formatter: (value, context) => {
+          const label = data[context.dataIndex].expense;
+          const count = data[context.dataIndex].count;
+          return `${count + '%'}\n${label}`;
+        },
+        color: 'rgb(255, 255, 255, 1)',
+        align: 'center',
+        textAlign: 'center',
+        font: {
+          size: 15,
+          weight: 'bold',
+        },
+      },
       legend: {
         display: false,
       },

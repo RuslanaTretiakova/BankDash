@@ -12,7 +12,7 @@ const data = [
 ];
 
 const baseDataset = {
-  borderWidth: 8,
+  borderWidth: 12,
   borderColor: 'rgba(0, 0, 0, 0.0)',
 };
 
@@ -58,6 +58,9 @@ new Chart(document.getElementById('bar-chart'), {
       padding: 20,
     },
     plugins: {
+      datalabels: {
+        display: false,
+      },
       legend: {
         labels: {
           boxWidth: 15,
