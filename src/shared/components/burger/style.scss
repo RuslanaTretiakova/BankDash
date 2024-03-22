@@ -15,7 +15,7 @@ $burger-size: 18px;
   gap: 4px;
   border: 0;
 
-  @media only screen and (min-width: $sm-query) {
+  @media only screen and (min-width: $lg-query) {
     display: none;
   }
 

@@ -12,16 +12,16 @@
     transition: all 0.2s;
     transition-property: opacity, transform, box-shadow;
 
+    @media only screen and (min-width: $lg-query) {
+      transform: translateX(0);
+    }
+
     .menu-open & {
       width: calc(100vw - 50%);
       margin-top: var(--header-height);
       transform: translateX(0);
       box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
     }
-  }
-
-  @media only screen and (min-width: $sm-query) {
-    transform: translateX(0);
   }
 
   &__overlay {
@@ -48,7 +48,7 @@
     color: var(--help-color-2);
     text-decoration: none;
 
-    @media only screen and (min-width: $sm-query) {
+    @media only screen and (min-width: $lg-query) {
       display: flex;
     }
   }
