@@ -10,6 +10,7 @@ html {
 
 body {
   @extend %font-primary;
+  min-width: 320px;
   background: #f5f7fa;
   color: var(--text-color);
 }

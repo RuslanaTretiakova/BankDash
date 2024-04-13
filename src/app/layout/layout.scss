@@ -2,7 +2,6 @@
   color: black;
 
   &__container {
-    
     @media only screen and (min-width: $lg-query) {
       padding-top: var(--header-height);
       padding-left: var(--aside-width);

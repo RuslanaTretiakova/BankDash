@@ -7,9 +7,14 @@
     display: block;
     position: relative;
     gap: 10px;
+    font-size: 0.8rem;
     padding: 1rem 0 0.7rem calc(var(--aside-width) / 5.5);
     text-decoration: none;
     opacity: 0.5;
+
+    @media only screen and (min-width: $md-query) {
+      font-size: 1rem;
+    }
 
     &:hover {
       color: var(--primary-color);

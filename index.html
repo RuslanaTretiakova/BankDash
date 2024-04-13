@@ -26,6 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Vite App</title>
   </head>
   <body>
@@ -183,7 +184,68 @@
             </section>
             <section>
               <h2 class="title">Quick transfer</h2>
-              <div class="card"></div>
+              <div class="card">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="swiper-slide__img" src="public/swiper/Livia.jpg" alt="Avatar" />
+                      <div>
+                        <h5 class="swiper-slide__name">Livia Bator</h5>
+                        <p class="swiper-slide__position">CEO</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper-slide__img" src="public/swiper/Randy.jpg" alt="Avatar" />
+                      <div>
+                        <p class="swiper-slide__name">Randy Press</p>
+                        <p class="swiper-slide__position">Director</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper-slide__img" src="public/swiper/Workman.jpg" alt="Avatar" />
+                      <div>
+                        <p class="swiper-slide__name">Workman</p>
+                        <p class="swiper-slide__position">Designer</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper-slide__img" src="public/swiper/Livia.jpg" alt="Avatar" />
+                      <div>
+                        <p class="swiper-slide__name">Livia Bator</p>
+                        <p class="swiper-slide__position">CEO</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper-slide__img" src="public/swiper/Randy.jpg" alt="Avatar" />
+                      <div>
+                        <p class="swiper-slide__name">Randy Press</p>
+                        <p class="swiper-slide__position">Director</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper-slide__img" src="public/swiper/Workman.jpg" alt="Avatar" />
+                      <div>
+                        <p class="swiper-slide__name">Workman</p>
+                        <p class="swiper-slide__position">Designer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <form action="#" class="transfer-form">
+                  <label class="transfer-form__label" for="transfer">Write amount</label>
+                  <input
+                    class="transfer-form__input"
+                    type="number"
+                    placeholder="00.00"
+                    name="transfer"
+                  />
+                  <button class="transfer-form__button">
+                    Send
+                    <i class="ri-send-plane-fill"></i>
+                  </button>
+                </form>
+              </div>
             </section>
             <section class="col-span-2">
               <h2 class="title">Balance History</h2>
