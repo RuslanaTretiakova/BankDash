@@ -8,7 +8,7 @@ const data = [
   { expense: 'Others', count: 35 },
 ];
 
-new Chart(document.getElementById('pie-chart'), {
+new Chart(document.querySelector('.j-expense-statistics-chart'), {
   type: 'pie',
   data: {
     labels: data.map((row) => row.expense),

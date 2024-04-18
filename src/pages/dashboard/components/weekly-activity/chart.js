@@ -31,7 +31,7 @@ const datasets = [
   }),
 ];
 
-new Chart(document.getElementById('bar-chart'), {
+new Chart(document.querySelector('.j-weekly-activity-chart'), {
   type: 'bar',
   data: {
     datasets,

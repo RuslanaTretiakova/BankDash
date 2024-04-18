@@ -11,7 +11,7 @@ const data = [
   { months: 'Jan', balance: 450 },
 ];
 
-new Chart(document.getElementById('line-chart'), {
+new Chart(document.querySelector('.j-balance-history-chart'), {
   type: 'line',
   data: {
     labels: data.map((row) => row.months),

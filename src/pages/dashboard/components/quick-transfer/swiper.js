@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
+import './swiper.scss';
 
-const swiper = new Swiper('.mySwiper', {
+new Swiper('.j-quick-transfer', {
   modules: [Navigation],
   cssMode: true,
   effect: 'fade',
@@ -20,9 +21,14 @@ const swiper = new Swiper('.mySwiper', {
       slidesPerView: 3,
       spaceBetween: 30,
     },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+    1500: {
+      slidesPerView: 6,
+    },
   },
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  swiper.slideNext();
 });
