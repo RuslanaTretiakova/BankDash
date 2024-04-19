@@ -1,0 +1,28 @@
+{
+  "name": "bank-dash",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,css,scss,md,yml}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "sass": "^1.70.0",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.1",
+    "chartjs-plugin-annotation": "^3.0.1",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "modern-normalize": "^2.0.0",
+    "remixicon": "^4.1.0",
+    "swiper": "^11.1.1",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}

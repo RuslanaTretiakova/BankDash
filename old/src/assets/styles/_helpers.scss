@@ -1,0 +1,7 @@
+.container {
+  padding: 0 clamp(1rem, 5vw, 4rem);
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
