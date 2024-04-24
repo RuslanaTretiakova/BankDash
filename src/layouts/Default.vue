@@ -1,3 +1,19 @@
+<script setup lang="ts">
+import AppHeader from '@/components/app/AppHeader.vue'
+import AppAside from '@/components/app/AppAside.vue'
+</script>
+
+<template>
+  <div class="layout">
+    <AppHeader />
+    <AppAside />
+    <div class="layout__container">
+      <slot />
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
 .layout {
   color: black;
 
@@ -20,3 +36,4 @@
     }
   }
 }
+</style>

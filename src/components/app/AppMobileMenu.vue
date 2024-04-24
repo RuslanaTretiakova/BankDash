@@ -1,3 +1,16 @@
+<script setup lang="ts">
+const toggleMenu = () => {
+  document.documentElement.classList.toggle('menu-open')
+}
+</script>
+
+<template>
+  <button class="j-mobile-menu mobile-menu" @click="toggleMenu">
+    <span class="mobile-menu__item"></span>
+  </button>
+</template>
+
+<style lang="scss">
 $burger-size: 18px;
 
 .mobile-menu {
@@ -54,3 +67,4 @@ $burger-size: 18px;
     }
   }
 }
+</style>

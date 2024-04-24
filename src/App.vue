@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import Default from '@/layouts/Default.vue'
+</script>
+
 <template>
-  <div>123</div>
+  <Default>
+    <RouterView />
+  </Default>
 </template>
