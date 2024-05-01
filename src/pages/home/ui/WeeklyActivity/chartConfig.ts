@@ -17,7 +17,6 @@ export const data = {
 export const options = {
   borderWidth: 10,
   borderColor: 'rgba(0, 0, 0, 0.0)',
-  responsive: true,
   maintainAspectRatio: true,
   scales: {
     y: {
