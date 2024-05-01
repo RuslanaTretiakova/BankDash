@@ -1,3 +1,23 @@
+<template>
+  <div class="dropdown">
+    <button class="header__profile-button" @click="toggleDropdown">
+      <img
+        src="/icon/790e98129931897251abd3915a931233.jpg"
+        alt="Avatar"
+        class="header__profile-image"
+      />
+    </button>
+    <div class="dropdown__content dropdown__content--right">content</div>
+  </div>
+</template>
+
+<script setup lang="ts">
+const toggleDropdown = () => {
+  document.documentElement.classList.toggle('dropdown--open')
+}
+</script>
+
+<style lang="scss">
 .dropdown {
   $self: &;
 
@@ -30,3 +50,4 @@
     }
   }
 }
+</style>

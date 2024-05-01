@@ -13,10 +13,13 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "chart.js": "^4.4.2",
     "modern-normalize": "^2.0.0",
     "remixicon": "^4.2.0",
     "sass": "^1.75.0",
+    "swiper": "^11.1.1",
     "vue": "^3.3.10",
+    "vue-chartjs": "^5.3.1",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {

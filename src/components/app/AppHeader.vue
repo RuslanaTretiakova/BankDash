@@ -1,21 +1,15 @@
 <script setup lang="ts">
 import AppMobileMenu from './AppMobileMenu.vue'
+import AppDropdown from './AppDropdown.vue'
+import AppForm from './AppForm.vue'
 </script>
 
 <template>
   <header class="header">
     <AppMobileMenu />
     <h2 class="header__title">Overview</h2>
-    <div class="dropdown">
-      <button class="header__profile-button">
-        <img
-          src="/icon/790e98129931897251abd3915a931233.jpg"
-          alt="Avatar"
-          class="header__profile-image"
-        />
-      </button>
-      <div class="dropdown__content dropdown__content--right">content</div>
-    </div>
+    <AppForm />
+    <AppDropdown />
   </header>
 </template>
 

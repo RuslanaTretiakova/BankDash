@@ -1,6 +1,22 @@
+<script lang="ts">
+export default {
+  methods: {
+    goHome() {
+      this.$router.push('/')
+    },
+    goToTransactions() {
+      this.$router.push('/transactions')
+    },
+    goToAccounts() {
+      this.$router.push('/accounts')
+    }
+  }
+}
+</script>
+
 <template>
   <ul class="navigation">
-    <li class="navigation__item">
+    <li class="navigation__item" @click="goHome">
       <a class="navigation__link" href="#">
         <span>
           <i class="ri-home-4-fill"></i>
@@ -8,7 +24,7 @@
         Dashboard
       </a>
     </li>
-    <li class="navigation__item">
+    <li class="navigation__item" @click="goToTransactions">
       <a class="navigation__link" href="#">
         <span>
           <i class="ri-money-dollar-box-fill"></i>
@@ -16,7 +32,7 @@
         Transactions
       </a>
     </li>
-    <li class="navigation__item">
+    <li class="navigation__item" @click="goToAccounts">
       <a class="navigation__link" href="#">
         <span>
           <i class="ri-user-3-fill"></i>

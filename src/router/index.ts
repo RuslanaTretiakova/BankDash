@@ -2,7 +2,8 @@ import { createWebHistory, createRouter } from 'vue-router'
 
 const routes = [
   { path: '/', component: () => import('@/pages/Home.vue') },
-  { path: '/about', component: () => import('@/pages/About.vue') }
+  { path: '/transactions', component: () => import('@/pages/Transactions.vue') },
+  { path: '/accounts', component: () => import('@/pages/Accounts.vue') }
 ]
 
 export const router = createRouter({
